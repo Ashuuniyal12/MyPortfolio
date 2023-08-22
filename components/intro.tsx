@@ -32,7 +32,7 @@ export default function Intro() {
     }, 6000); // Change to your desired interval
 
     return () => clearInterval(interval);
-  }, [currentPartIndex]);
+  }, [currentPartIndex,textParts.length]);
 
   //effect to animate the text in the state by adding the character of current strng to the state variable
   useEffect(() => {
@@ -99,7 +99,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ashutosh.</span> I'm a{" "}
+        <span className="font-bold">Hello, I&apos;m Ashutosh.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience.
       </motion.h1>
