@@ -34,7 +34,7 @@ export default function About() {
         Outside of my academic and professional pursuits, I find joy in graphic
         designing, playing the guitar, and embarking on new travel adventures.
         My achievements, such as clinching a spot in the top 20 teams during the
-        CodeZilla Hackathon and participating in Amazon's ML Summer School,
+        CodeZilla Hackathon and participating in Amazon ML Summer School,
         reflect my commitment to continuous growth and learning. Armed with a
         deep understanding of programming languages, frameworks, and databases,
         I am eager to contribute my knowledge to the dynamic and ever-evolving
