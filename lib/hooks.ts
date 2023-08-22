@@ -22,7 +22,7 @@ export function useSectionInView({
         if (inView && Date.now() - timeofLastClick > 1000) {
             SetActiveSection(sectionName);
         }
-    }, [inView, SetActiveSection, timeofLastClick]);
+    }, [inView, SetActiveSection, timeofLastClick,sectionName]);
 
     return {
         ref,
