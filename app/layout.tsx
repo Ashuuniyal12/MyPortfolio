@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switcher";
 import ThemeContextProvider from "@/context/theme-constext";
+import SplineModel from "@/components/spline-3d-model";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +31,11 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContexProvider>
+            
             <Header />
             {children}
             <Toaster position="top-right" />
+            <SplineModel />
             <Footer />
             <ThemeSwitch />
           </ActiveSectionContexProvider>
