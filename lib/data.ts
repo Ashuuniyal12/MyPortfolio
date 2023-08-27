@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import collegera from "@/public/collegeEra.png";
 import globaloneness from "@/public/globaloneness.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import dashboard from "@/public/dashboard.png";
 
 export const links = [
   {
@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated frrom Geaphic Era Hill University",
+    title: "Graduated from Graphic Era Hill University",
     location: "Dehradun, India",
     description:
       "I am undergoing my graduation in Computer Science and Engineering from Graphic Era Hill University, Dehradun, India. I have learned many things during my graduation and also worked on many projects. I have also done an internship in a startup company.",
@@ -59,6 +59,7 @@ export const projectsData = [
       "Created online platform designed exclusively for college students seeking to foster connections, enhance learning experiences, and create a collaborative community. ",
     tags: ["React", "socket.io", "Tailwind", "Redux","Node.js","Express"],
     imageUrl: collegera,
+    live: "https://collegeera.netlify.app"
   },
   {
     title: "EduConnect",
@@ -66,6 +67,15 @@ export const projectsData = [
       'created a virtual learning platform designed to transform the educational experience by offering a comprehensive suite of features and functionalities that enhance engagement, streamline administrative tasks, and provide a holistic learning experience.',
     tags: ["React",  "MongoDB", "Tailwind", "Express","ApexCahrrts","Redux"],
     imageUrl: globaloneness,
+    live: "https://globaloneness.netlify.app/home"
+  },
+  {
+    title: "Dashboard",
+    description:
+      'created a mordern dashboar using chart.js ,apex chart in react and created a mordern looking ui  .',
+    tags: ["React", "Tailwind", "CSS","ApexCahrrts","JS"],
+    imageUrl: dashboard,
+    live: "https://ultimate-resource-kit-demo.netlify.app/"
   },
   
 ] as const;

@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
-import { motion, useScroll ,useTransform} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
+import { FaGlobeAmericas } from "react-icons/fa";
 
 type ProjectsProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  live
 }: ProjectsProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -20,11 +22,11 @@ export default function Project({
     offset: ["0 1", "1.33 1"],
   });
 
-  const scaleOpacity= useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  const scaleProgress= useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   return (
     <motion.div
-    className="group sm:pr-8 mb-3 sm:mb-8 last:mb-0"
+      className="group sm:pr-8 mb-3 sm:mb-8 last:mb-0"
       style={{
         scale: scaleProgress,
         opacity: scrollYProgress,
@@ -33,7 +35,11 @@ export default function Project({
     >
       <section className=" relative bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg sm:h-[20rem] sm:group-even:pl-8 overflow-hidden hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <div className="flex gap-3 items-center ">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <a  className= "hover:text-xl flex items-center gap-1"  target= "_blank" href={live}>Demo<FaGlobeAmericas/></a>
+          
+          </div>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-[14px]">
             {description}
           </p>
