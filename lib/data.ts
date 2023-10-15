@@ -1,11 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { CgWorkAlt } from "react-icons/cg";;
 import { LuGraduationCap } from "react-icons/lu";
 import collegera from "@/public/collegeEra.png";
 import globaloneness from "@/public/globaloneness.png";
 import dashboard from "@/public/dashboard.png";
-
+import summerizer from "@/public/summerizer.png";
 export const links = [
   {
     name: "Home",
@@ -35,7 +34,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated from Graphic Era Hill University",
+    title: "Graduating from Graphic Era Hill University",
     location: "Dehradun, India",
     description:
       "I am undergoing my graduation in Computer Science and Engineering from Graphic Era Hill University, Dehradun, India. I have learned many things during my graduation and also worked on many projects. I have also done an internship in a startup company.",
@@ -68,6 +67,14 @@ export const projectsData = [
     tags: ["React",  "MongoDB", "Tailwind", "Express","ApexCahrrts","Redux"],
     imageUrl: globaloneness,
     live: "https://globaloneness.netlify.app/home"
+  },
+  {
+    title: "AI Articles & Website Summarizer",
+    description:
+      'Simplify your reading with Summize , an article summarizer that transfrom lengthy articles into clear & consise summaries',
+    tags: ["React",  "Context", "Tailwind", "OpenAI","NextJS"],
+    imageUrl: summerizer,
+    live: "https://gpt-ai-summarizer.vercel.app/"
   },
   {
     title: "Dashboard",
