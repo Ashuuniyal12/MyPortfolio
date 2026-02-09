@@ -14,7 +14,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 export default function Intro() {
   const textParts: string[] = [
-    " I ❤️ to Code and solve real world problems My focus is React (Next.js).",
+    " I ❤️ to Code and solve real world problems My focus is React (Next.js). and Salesforce",
     " I am deeply passionate about the world of technology and its endless possibilities ",
     "If you are feeling bored come and join me for a muscial 🎸 jam session .",
   ];
@@ -101,7 +101,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Ashutosh.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">a year</span> of experience.
+        <span className="font-bold">3+ year</span> of experience.
       </motion.h1>
 
       <div className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl">
